@@ -29,6 +29,12 @@ get email(){
 login(){
   if(this.loginForm.valid){
     console.log("llamar servicio login")
+    var b = document.querySelector("html");
+    console.log(b);
+    if (b!=null){
+      b.setAttribute("data-bs-theme", "dark");
+    }
+    
   }
   else{
     this.loginForm.markAllAsTouched();

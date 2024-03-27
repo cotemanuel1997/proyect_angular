@@ -1,4 +1,15 @@
-form {
-    max-width: 25%;
-    margin-top: 70px;
+.container-fluid{
+    height: 200px;
+    position: relative;
+    border: 3px solid green; 
 }
+.conteiner-fluid .container{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    max-width: 400px;
+}
+
