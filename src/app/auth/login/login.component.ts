@@ -29,16 +29,25 @@ get email(){
 login(){
   if(this.loginForm.valid){
     console.log("llamar servicio login")
-    var b = document.querySelector("html");
-    console.log(b);
-    if (b!=null){
-      b.setAttribute("data-bs-theme", "dark");
-    }
-    
   }
   else{
     this.loginForm.markAllAsTouched();
   }
+}
+
+lightMode(){
+  var b = document.querySelector("html");
+  b?.setAttribute("data-bs-theme", "light");
+}
+
+darkMode(){
+  var b = document.querySelector("html");
+  b?.setAttribute("data-bs-theme", "dark");
+}
+
+autoMode(){
+  var b = document.querySelector("html");
+  b?.setAttribute("data-bs-theme", "auto");
 }
 
   constructor(private formBuilder: FormBuilder) {}
